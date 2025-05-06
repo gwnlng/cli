@@ -20,6 +20,7 @@ export type SupportedPackageManagers =
   | 'hex'
   | 'Unmanaged (C/C++)'
   | 'swift';
+  // | 'carthage';
 
 export enum SUPPORTED_MANIFEST_FILES {
   GEMFILE = 'Gemfile',
@@ -53,6 +54,8 @@ export enum SUPPORTED_MANIFEST_FILES {
   POETRY_LOCK = 'poetry.lock',
   MIX_EXS = 'mix.exs',
   PACKAGE_SWIFT = 'Package.swift',
+  CARTFILE = 'Cartfile',
+  CARTFILE_RESOLVED = 'Cartfile.resolved',
 }
 
 export const SUPPORTED_PACKAGE_MANAGER_NAME: {
@@ -77,6 +80,7 @@ export const SUPPORTED_PACKAGE_MANAGER_NAME: {
   hex: 'Hex',
   'Unmanaged (C/C++)': 'Unmanaged (C/C++)',
   swift: 'Swift',
+  // carthage: 'Carthage',
 };
 
 export const GRAPH_SUPPORTED_PACKAGE_MANAGERS: SupportedPackageManagers[] = [
