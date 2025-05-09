@@ -13,6 +13,7 @@ export interface AcceptanceTests {
 
 import { GenericTests } from './cli-test/cli-test.generic.spec';
 
+import { CarthageTests } from './cli-test/cli-test.carthage.spec';
 import { CocoapodsTests } from './cli-test/cli-test.cocoapods.spec';
 import { SwiftTests } from './cli-test/cli-test.swift.spec';
 import { ComposerTests } from './cli-test/cli-test.composer.spec';
@@ -31,6 +32,7 @@ import { YarnWorkspacesTests } from './cli-test/cli-test.yarn-workspaces.spec';
 import { AllProjectsTests } from './cli-test/cli-test.all-projects.spec';
 
 const languageTests: AcceptanceTests[] = [
+  CarthageTests,
   CocoapodsTests,
   ComposerTests,
   DockerTests,

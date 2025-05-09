@@ -19,8 +19,8 @@ export type SupportedPackageManagers =
   | 'poetry'
   | 'hex'
   | 'Unmanaged (C/C++)'
-  | 'swift';
-  // | 'carthage';
+  | 'swift'
+  | 'carthage';
 
 export enum SUPPORTED_MANIFEST_FILES {
   GEMFILE = 'Gemfile',
@@ -80,7 +80,7 @@ export const SUPPORTED_PACKAGE_MANAGER_NAME: {
   hex: 'Hex',
   'Unmanaged (C/C++)': 'Unmanaged (C/C++)',
   swift: 'Swift',
-  // carthage: 'Carthage',
+  carthage: 'Carthage',
 };
 
 export const GRAPH_SUPPORTED_PACKAGE_MANAGERS: SupportedPackageManagers[] = [

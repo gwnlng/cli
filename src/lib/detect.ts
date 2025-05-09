@@ -37,8 +37,8 @@ const DETECTABLE_FILES: string[] = [
   'mix.exs',
   'mix.lock',
   'Package.swift',
-  'Carfile',
   'Cartfile.resolved',
+  'Cartfile',
 ];
 
 export const AUTO_DETECTABLE_FILES: string[] = [
@@ -68,12 +68,13 @@ export const AUTO_DETECTABLE_FILES: string[] = [
   'mix.exs',
   'mix.lock',
   'Package.swift',
-  'Carfile',
   'Cartfile.resolved',
+  'Cartfile',
 ];
 
 // when file is specified with --file, we look it up here
 // this is also used when --all-projects flag is enabled and auto detection plugin is triggered
+// Cartfile is parked under swift PM due to registry package-manager.ts for monitor cmd
 const DETECTABLE_PACKAGE_MANAGERS: {
   [key in SUPPORTED_MANIFEST_FILES]: SupportedPackageManagers;
 } = {

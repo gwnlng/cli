@@ -61,7 +61,7 @@ export function loadPlugin(
     case 'hex': {
       return hexPlugin;
     }
-    // case 'carthage':
+    case 'carthage':
     case 'swift': {
       return swiftPlugin;
     }
